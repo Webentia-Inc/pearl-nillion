@@ -1,10 +1,12 @@
-// src/lib/secretVaultData.ts
+import dotenv from "dotenv";
+dotenv.config();
+
 import { SecretVaultWrapper } from 'secretvaults';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { v4 as uuidv4 } from 'uuid';
 import { secretVaultOrgConfig } from '../config/secretVaultOrgConfig';
 
-const SCHEMA_ID = '571a330e-2398-41bc-bc39-2d41237be285'; // Use env variable or replace with actual schema ID
+const SCHEMA_ID = process.env.NEXT_PUBLIC_SECRETVAULT_SCHEMA_ID; // Use env variable or replace with actual schema ID
 
 const web3ExperienceSurveyData = [
     {
