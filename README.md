@@ -24,3 +24,4 @@
   <li>secretvaults.d.ts</li>
 </ul>
 
+<h4>Note: This template is open for contributions.</h4>
